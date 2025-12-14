@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #3B3B1A;
+    --secondary-color: #796b2c;
+    --accent-color: #8A784E;
+    --padding-inline-section: 20px;
+}
+
+/* Utility classes */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    background-color: #FEFAE0
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+.container{
+    max-width: 1180px;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+
+/* Top Banner */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.top-banner{
+background-image: url(icons/circuit-board.svg);
+background-size: 300px;
+    color: white;
+    background-color:var(--primary-color)
+
+}
+
+.banner-text{
+    text-align: center;
+    color: white !important;
+    padding: 15px 20px;
+} 
+
+/* Navigation bar menu */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+.company-logo img{
+    width: 250px;
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.nav-links{
+    flex-basis: 720px;
+}
+
+.nav-links ul{
+    gap: 20px;
+    justify-content: end;
+}
+
+.hover-links{
+    color: var(--primary-color);
+    transition: 0.5s;
+}
+.hover-links:hover{
+    color: var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    color: white !important;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.5s ease-out;
+}
+
+.primary-button:hover{
+    background-color: #6f613f;
+}
+
+.secondary-button{
+    border: 1px solid var(--accent-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.5s ease-out;
+}
+
+.secondary-button:hover{
+     border-color: var(--primary-color);
+     color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+
+header{
+    padding: 0 var(--padding-inline-section); /* only left & right padding */
+}
+
+
+.header-section{
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+.header-right img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.header-left{
+    max-width: 540px;
+}
+
+.header-left a{
+margin-top: 20px;
+}
+
+/* .logo-section */
+
+.logos img{
+    height: 50px;
+}
+
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.companies-header{
+    
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-color);
+}
+
+/* Feature section  */
+
+.feature-card{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;     
+  gap: 10px;              
+}
+
+.feature-card img{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.feature-area{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: start;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-card{
+    max-width: 320px;
+    width: 100%;
+}
+
+/* Center the last two cards (5th and 6th) */
+.feature-card:nth-child(5),
+.feature-card:nth-child(6){
+    grid-column: auto;
+}
+
+.feature-card:nth-child(5){
+    grid-column: 2 / 3;
+}
+
+.feature-card:nth-child(6){
+    grid-column: 3 / 4;
+}
+
+.feature-header h2{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.feature-header{
+    text-align: center;
+}
+
+.feature-section{
+    padding: 80px var(--padding-inline-section);
+    background-image: url(icons/PngItem_3760239.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Biig Feature seection */
+
+.big-feature{
+    padding: 30px var(--padding-inline-section);
+}
+
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-img img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.feature-desc{
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+}   
+
+/* Example seection */
+
+.example-header{
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 20px;              /* space between heading + button */
+  align-items: center;    /* center them horizontally */
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.example-area {
+  display: flex;
+  flex-wrap: wrap;         /* so they move nicely on small screens */
+  justify-content: space-between;
+  align-items: stretch;    /* makes all cards equal height */
+  gap: 20px;               /* spacing between cards */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
+  gap: 20px;
+  margin-top: 20px;
+ transition: 0.5s;
+}
+
+
+.example-card {
+   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 220px; /* uniform height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 50px;
+
+}
+
+
+.example-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-text{
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+
+.example-card:nth-child(1) {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), 
+              url(icons/Cyber\ attack-bro.png);
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.example-card:nth-child(2) {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), 
+              url(icons/Security\ On-bro.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.example-card:nth-child(3) {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), 
+              url(icons/Security-pana.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.example-card:nth-child(4) {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), 
+              url(icons/Secure\ Server-amico.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* CTA sectionn */
+.cta-section-container{
+    flex-direction: column;
+    gap: 20px;
+}
+.cta-section-container h2{
+       color: white
+} 
+.cta-section-container p{
+    text-align: center;
+    color: white;
+}
+
+.cta-section{
+    background-color: var(--primary-color);
+    margin-top: 20px;
+    padding: 70px var(--padding-inline-section);
+}
+
+/* Lower Navigation bar */
+.LowNav-box{
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.LowNav-list{
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 20px;
+}
+.products{
+margin-top: 20px;
+color: blue;
+}
+
+/* Margin fixes and consistent section spacing */
+/* Normalize spacing and remove odd negative margins */
+.header-section,
+.companies-section,
+.feature-section,
+.big-feature-section,
+.example-section,
+.cta-section,
+.LowNav-box{
+    padding-block: 24px;
+    margin-block: 12px 24px;
+}
+
+/* Give the container a small vertical padding so content doesn't touch edges */
+.container{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* Responsive improvements */
+/* Make images fluid and logos constrained */
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.company-logo img{
+    width: auto;
+    max-width: 220px;
+    height: auto;
+}
+
+/* Ensure container is comfortable on small screens */
+.container{
+    width: 100%;
+    padding-left: var(--padding-inline-section);
+    padding-right: var(--padding-inline-section);
+}
+
+/* Header / hero adjustments */
+.head-section,
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-left{
+    max-width: 540px;
+    width: 100%;
+}
+
+.header-right img{
+    max-width: 100%;
+    width: 420px;
+    height: auto;
+}
+
+/* Feature grid becomes responsive */
+.feature-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.example-area{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: grid;
+}
+
+.logos{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logos img{
+    max-height: 48px;
+    width: auto;
+}
+
+.big-feature-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-img,
+.feature-desc{
+    flex: 1 1 320px;
+}
+
+/* Navigation responsiveness */
+.main-nav{
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Media queries */
+@media (max-width: 900px){
+    h1{font-size: 2rem;}
+    h2{font-size: 2rem;}
+    h3{font-size: 1.25rem;}
+
+    .company-logo img{max-width:180px}
+
+    .nav-links{
+        width: 100%;
+    }
+
+    .nav-links ul{
+        justify-content: center;
+    }
+
+    .header-right img{width:320px}
+}
+
+@media (max-width: 600px){
+    :root{--padding-inline-section: 12px}
+
+    .container{padding-left:12px; padding-right:12px}
+
+    .main-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .header-left{max-width:100%;}
+
+    .header-right img{width:100%; max-width:360px}
+
+    .feature-section{padding: 40px 12px}
+    .cta-section{padding: 40px 12px}
+
+    .example-card{min-height: 180px}
+}
+
+/* Small touchups for very small devices */
+@media (max-width: 380px){
+    h1{font-size:1.6rem}
+    p{font-size:1rem}
+    .company-logo img{max-width:160px}
+}
